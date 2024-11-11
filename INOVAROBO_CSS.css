@@ -1,0 +1,403 @@
+
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: #000;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;/*largura máxima*/
+    margin: 0 auto; 
+
+
+}
+.flex{
+    display: flex;
+}
+.btn-contato button{/*esstiliza o butao de contatos*/
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #c620f0;
+    border: 0;
+    border-radius: 30px ; /*arredonda as bordas*/
+    cursor: pointer;
+    transition: .2s;
+}
+/*FIM DO ESTILO GERAL*/
+h2.titulo{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #A020F0;
+}
+ button:hover{
+    box-shadow: 0px 0px 8px #A020F0;
+    transform: scale(1.05);
+ }
+
+/*ESTILO DO MENU (CABEÇALHO)*/
+header{
+    padding: 40px 4%;/* px é altura e a porcentagem é a largura */
+    
+
+}
+header > .interface{ /* separamento do elemetos do menu */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 140px;
+    height: 49px;
+
+
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;/*retira as linhas debaixo do elementos do menu */
+    display: inline-block; /*converte o link em inline block para poder funcionar o transform(o zoom dos elementos )*/
+    transition: .2s;/*suaviliza a o zoom*/
+}
+header a:hover{/*animacao do menu*/
+    color: #A020F0;
+    transform: scale(1.05);/*da zoom nos elementos do menu*/
+
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block; /* deixa os elementos dos menu lado a lado */
+    padding: 0 40px;/*espaçamento entre os elementos do menu*/
+
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #473d8baf;
+    transform: scale(1.05);
+}
+/*FIM DO MENU(CABEÇALHO)*/
+
+/*ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+}
+.topo-do-site h1{
+    color: #fff;
+    font-size: 34px;
+    gap: 90px; /*espaçamento entre os elementos (tipo um suspiro entre eles )*/
+    line-height: 20x
+} 
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #A020F0;
+}
+
+.topo-do-site .txt-topo-site p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:19px ;
+    color: #fff;
+    margin: 30px 0;
+}
+
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate; /*configuração da animação de flutuar da imagem*/
+    filter: drop-shadow(1px 1px 20px rgb(243, 136, 243));
+}
+
+
+@keyframes flutuar{/*animação de flutuar da imagem*/
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/*ESTILO DOS TIPOS*/
+section.tipos{
+    padding: 40px 4%;
+    
+}
+section.tipos .flex {
+    gap: 60px;
+}
+.tipos .tipos-box img{
+    justify-content: center;
+    width: 190px;
+    height: auto;
+    border-radius: 8px;
+    
+}
+.tipos .tipos-box{
+    color: #fff;
+    padding: 40px;
+    margin-top: 35px;
+    border-radius: 20px;
+    transition: .2s;
+    
+}
+.tipos .tipos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 23px #8A2BE2;
+}
+.tipos .tipos-box  h3{
+    font-size: 20px;
+    margin: 15px 0;
+    
+}
+
+/*ESTILO SOBRE*/
+
+section.sobre{
+    padding: 40px 4%;
+}
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+
+.sobre .txt-sobre{
+    color: #fff;
+
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+}
+.sobre .txt-sobre h2 span{
+    color: #A020F0;
+}
+
+.sobre .txt-sobre h3 span{
+    color: #A020F0;
+}
+.sobre .txt-sobre p span{
+    color: #d18bfc;
+    font-size: 20px;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+/*Fim ESTILO SOBRE*/
+
+/*ESTILO INOVÇÃO*/
+
+section.inovacao{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #a020f047  ;
+    border-radius: 40px;
+    
+}
+section.inovacao .flex {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 90px;
+    
+}
+.inovacao .txt-inovacao{
+    color: #fff;
+}
+
+.inovacao  h2{
+    font-size: 40px;
+    gap: 90px; /*espaçamento entre os elementos (tipo um suspiro entre eles )*/
+    line-height: 20x
+}
+.inovacao h2 span{
+    color: #A020F0;
+}
+.inovacao .txt-inovacao p span{
+    color :#d18bfc;
+}
+
+.inovacao .txt-inovacao p{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 18px;;
+}
+
+.inovacao .img-inovacao img{
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate; /*configuração da animação de flutuar da imagem*/
+    filter: drop-shadow(1px 1px 20px rgb(243, 136, 243));
+}
+.inovacao .img-inovacao{
+    padding: 15px;
+}
+
+/*ESTILO CRIADOR*/
+
+section.criadores{
+    padding: 40px 4%;
+}
+section.criadores h2{
+    color: #fff;
+    margin-top: 30px;
+    gap: 90px; /*espaçamento entre os elementos (tipo um suspiro entre eles )*/
+    line-height: 40px
+}
+
+section.criadores .flex{
+    justify-content: space-evenly;
+    margin-top: 40px
+
+}
+.criadores .interface .titulo h2{
+    color: #A020F0; 
+    
+}
+.img-desen{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 100% 0% ;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a020f07b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+/* Estilos para tablets e telas médias (largura máxima de 768px) */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header > .interface {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav ul li {
+        padding: 0 10px;
+    }
+
+    header nav ul {
+        padding-top: 20px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+
+    .topo-do-site h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .topo-do-site .txt-topo-site p,
+    .tipos .tipos-box p,
+    .inovacao .txt-inovacao p,
+    .sobre .txt-sobre p {
+        font-size: 16px;
+    }
+
+    .tipos .tipos-box {
+        padding: 20px;
+    }
+
+    .img-topo-site img {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-inovacao img {
+        width: 100%;
+        height: auto;
+    }
+
+    .criadores .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-desen {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Estilos para celulares e telas pequenas (largura máxima de 480px) */
+@media (max-width: 480px) {
+    .btn-contato button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 22px;
+    }
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 14px;
+    }
+
+    header nav ul li {
+        padding: 0 5px;
+    }
+
+    header nav ul {
+        padding-top: 15px;
+    }
+
+    .tipos .tipos-box h3 {
+        font-size: 18px;
+    }
+
+    .tipos .tipos-box p,
+    .sobre .txt-sobre p,
+    .inovacao .txt-inovacao p {
+        font-size: 14px;
+    }
+
+    .img-desen {
+        width: 150px;
+        height: 150px;
+    }
+
+    .interface {
+        padding: 0 2%;
+    }
+}
+
+
+/*inicio do rodapé*/
